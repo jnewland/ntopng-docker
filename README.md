@@ -1,9 +1,10 @@
 ntopng-docker
 =============
 
-## ntopng Dock Builder
+## ntopng Docker Builder
 
 #### Install & Run
 ```
-docker run --net=host -t -p 3000:3000 lucaderi/ntopng-docker <ntopng arguments>
+docker build -t ntopng-docker .
+docker run --net=host -t -p 3000:3000 ntopng-docker <ntopng arguments>
 ```
